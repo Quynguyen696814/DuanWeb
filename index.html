@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Đá Quý</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Anh/bgr.png" alt="Background Image">
+    </header>
+    
+    <main>
+        <aside>
+            <h2>Thông tin người dùng</h2>
+            <div class="user-info">
+                <img src="Anh/images.png" alt="User Avatar">
+                <p>Nguyễn Văn A</p>
+                <p>Email: Nguyenvana@gmail.com</p>
+                <p>SĐT: 0123456789</p>
+                <a href="#">Chỉnh sửa tài khoản</a>
+            </div>
+            <h2>Địa chỉ giao hàng</h2>
+            <div class="address-info">
+                <p>0 Bà Triệu, Quận Hoàn Kiếm, Hà Nội</p>
+                <a href="#">Chỉnh sửa địa chỉ</a>
+            </div>
+            <h2>Lịch sử đơn hàng</h2>
+            <div class="order-history">
+                <ul>
+                    <li>Đơn hàng 15124442 - Đang giao</li>
+                    <li>Đơn hàng 11564131- Đã hoàn thành</li>
+                </ul>
+            </div>
+            <h2>Giỏ hàng</h2>
+            <div class="cart">
+                <p id="cart-item-count">Tổng số sản phẩm: 0</p>
+                <ul id="cart-items">
+                    <li>Giỏ hàng trống</li>
+                </ul>
+            </div>
+        </aside>
+        <section>
+            <h2>Đá Quý</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="Anh/kim-cuong-xanh.jpg" alt="Kim Cương Xanh">
+                    <p>Kim Cương Xanh</p>
+                    <p>500.000.000đ</p>
+                    <button onclick="addToCart('Kim Cương Xanh')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Kim Cương Xanh')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/LucBao.jpg" alt="Lục Bảo">
+                    <p>Lục Bảo</p>
+                    <p>123.000.000đ</p>
+                    <button onclick="addToCart('Lục Bảo')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Lục Bảo')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/HongNgoc.jpg" alt="Hồng Ngọc">
+                    <p>Hồng Ngọc</p>
+                    <p>86.000.000đ</p>
+                    <button onclick="addToCart('Hồng Ngọc')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Hồng Ngọc')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/KCHong.jpg" alt="Kim Cương Hồng">
+                    <p>Kim Cương Hồng</p>
+                    <p>768.000.000đ</p>
+                    <button onclick="addToCart('Kim Cương Hồng')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Kim Cương Hồng')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Musgravite.jpg" alt="Musgravite">
+                    <p>Musgravite</p>
+                    <p>884.000.000đ</p>
+                    <button onclick="addToCart('Musgravite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Musgravite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Alexandrite.jpg" alt="Alexandrite">
+                    <p>Alexandrite</p>
+                    <p>476.000.000đ</p>
+                    <button onclick="addToCart('Alexandrite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Alexandrite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/LucBaoDo.jpg" alt="Lục Bảo Đỏ">
+                    <p>Lục Bảo Đỏ</p>
+                    <p>89.000.000đ</p>
+                    <button onclick="addToCart('Lục Bảo Đỏ')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Lục Bảo Đỏ')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/OpalDen.jpg" alt="Opal Đen">
+                    <p>Opal Đen</p>
+                    <p>76.000.000đ</p>
+                    <button onclick="addToCart('Opal Đen')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Opal Đen')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Tanzanite.jpg" alt="Tanzanite">
+                    <p>Tanzanite</p>
+                    <p>100.000.000đ</p>
+                    <button onclick="addToCart('Tanzanite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Tanzanite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Serendibite.jpg" alt="Serendibite">
+                    <p>Serendibite</p>
+                    <p>79.000.000đ</p>
+                    <button onclick="addToCart('Serendibite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Serendibite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/RuBy.jpg" alt="RuBy">
+                    <p>RuBy</p>
+                    <p>53.000.000đ</p>
+                    <button onclick="addToCart('RuBy')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('RuBy')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Grandidierite.jpg" alt="Grandidierite">
+                    <p>Grandidierite</p>
+                    <p>200.000.000đ</p>
+                    <button onclick="addToCart('Grandidierite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Grandidierite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Jeremejevite.jpg" alt="Jeremejevite">
+                    <p>Jeremejevite</p>
+                    <p>320.000.000đ</p>
+                    <button onclick="addToCart('Jeremejevite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Jeremejevite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Benitoite.jpg" alt="Benitoite">
+                    <p>Benitoite</p>
+                    <p>111.000.000đ</p>
+                    <button onclick="addToCart('Benitoite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Benitoite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Poudretteite.jpg" alt="Poudretteite">
+                    <p>Poudretteite</p>
+                    <p>129.000.000đ</p>
+                    <button onclick="addToCart('Poudretteite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Poudretteite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Taaffeite.jpg" alt="Taaffeite">
+                    <p>Taaffeite</p>
+                    <p>99.000.000đ</p>
+                    <button onclick="addToCart('Taaffeite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Taaffeite')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Demantoid Garnet.jpg" alt="Demantoid Garnet">
+                    <p>Demantoid Garnet</p>
+                    <p>666.000.000đ</p>
+                    <button onclick="addToCart('Demantoid Garnet')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Demantoid Garnet')">Mua hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anh/Tsavorite.jpg" alt="Tsavorite">
+                    <p>Tsavorite</p>
+                    <p>444.000.000đ</p>
+                    <button onclick="addToCart('Tsavorite')">Thêm vào giỏ hàng</button>
+                    <button onclick="buyNow('Tsavorite')">Mua hàng</button>
+                </div>
+                <br/>
+                </div>
+                <div>
+                    <p>&copy; 2024 Shop Đá Quý. All rights reserved.</p>
+                </div>
+                </section>
+                </main>
+                </body>
+                </html>
+                
